@@ -1,4 +1,4 @@
-apiVersion: v1
-kind: Namespace
+apiVersion: v1          # Namespace ke liye API version
+kind: Namespace         # Resource type: Namespace
 metadata:
-  name: chat-app
+  name: chat-app        # Namespace ka naam (is namespace ke andar aapke saare resources banenge)
