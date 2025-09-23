@@ -10,7 +10,7 @@ metadata:
     nginx.ingress.kubernetes.io/ssl-redirect: "false"
 spec:
   rules:
-  - host: chat-tws.com
+  - host: chat-ajay.com
     http:
       paths:
       - pathType: Prefix
