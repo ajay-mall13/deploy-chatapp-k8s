@@ -1,34 +1,31 @@
-apiVersion: apps/v1
-kind: Deployment
+apiVersion: apps/v1          # Deployment ka API version
+kind: Deployment             # Resource type: Deployment
 metadata:
-  name: mongodb-deployment
-  namespace: chat-app
+  name: mongodb-deployment   # Deployment ka naam
+  namespace: chat-app        # Namespace jisme deploy karna hai
 spec:
-  replicas: 1
+  replicas: 1                # Ek hi replica (pod) chalega
   selector:
     matchLabels:
-      app: mongodb
-  template:
+      app: mongodb           # Is label ke basis par pod select hoga
+  template:                  # Pod ka template (Deployment isse Pods banata hai)
     metadata:
-      name: mongodb-pod
-      namespace: chat-app
+      name: mongodb-pod      # Pod ka naam (optional, usually auto-generate hota hai)
+      namespace: chat-app    # Pod jis namespace me banega
       labels: 
-        app: mongodb
+        app: mongodb         # Pod label (Deployment selector se match hona chahiye)
     spec:
       containers:
-      - name: chatapp-mongodb
-        image: mongo:latest
+      - name: chatapp-mongodb # Container ka naam
+        image: mongo:latest   # MongoDB image (latest version)
         ports:
-        - containerPort: 27017
-        env:
+        - containerPort: 27017 # MongoDB default port
+        env:                  # Environment variables for MongoDB init
         - name: MONGO_INITDB_ROOT_USERNAME
-          value: mongoadmin
+          value: mongoadmin   # Root username
         - name: MONGO_INITDB_ROOT_PASSWORD
-          value: secret
-      volumes:
-      - name: mongo-data
+          value: secret       # Root password
+      volumes:                # Volumes for persistent storage
+      - name: mongo-data      # Volume ka naam
         persistentVolumeClaim:
-          claimName: mongodb-pvc   
-
-
-
+          claimName: mongodb-pvc  # PVC jisme data persist hoga
