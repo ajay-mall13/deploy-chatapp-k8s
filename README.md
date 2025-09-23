@@ -72,7 +72,7 @@ PORT=5001
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/iemafzalhassan/full-stack_chatApp.git
+git clone https://github.com/ajay-mall13/deploy-chatapp-k8s.git
 ```
 
 ## 🏗️ Build and Run the Application"
@@ -100,7 +100,7 @@ http://localhost
 Follow these simple steps to get the project up and running on your local Host using docker.
 
 ```bash
-git clone https://github.com/iemafzalhassan/full-stack_chatApp.git
+git clone https://github.com/ajay-mall13/deploy-chatapp-k8s.git
 ```
 
 ```bash
@@ -207,17 +207,18 @@ This project is evolving, and here are a few exciting things on the horizon:
 
 ## 📚 Project Snapshots:
 
-![Settings](frontend/public/settings.png)
+<img width="980" height="445" alt="Screenshot 2025-09-23 233131" src="https://github.com/user-attachments/assets/655fb8b5-85e2-4b88-8932-99c95b745fbb" />
 
-![chat](frontend/public/chat.png)
+<img width="1914" height="971" alt="Screenshot 2025-09-23 221936" src="https://github.com/user-attachments/assets/29565e0f-cccb-429f-b09e-a60e7cc7ace4" />
 
-![logout](/frontend/public/logout.png)
+<img width="1920" height="1080" alt="Screenshot (440)" src="https://github.com/user-attachments/assets/b0f4922c-efc5-4fca-9777-96e7201c50b5" />
 
-![Login](/frontend/public/login.png)
+<img width="1909" height="934" alt="Screenshot 2025-09-23 221702" src="https://github.com/user-attachments/assets/4464cec4-8645-4c9f-b1f7-2ca56d96c20e" />
 
 
 
 ## 📜 License
+
 
 
 This project is licensed under the MIT License. See the LICENSE file for more details.
