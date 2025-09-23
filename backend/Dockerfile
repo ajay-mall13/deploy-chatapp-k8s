@@ -32,7 +32,6 @@ EXPOSE 5001
 
 USER appuser
 
-# Start the server
 CMD ["npm", "start"]
 
 # Health check
