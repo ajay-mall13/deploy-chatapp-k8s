@@ -30,7 +30,6 @@ ENV NODE_ENV=production
 # Expose port
 EXPOSE 5001
 
-# Switch to non-root user
 USER appuser
 
 # Start the server
