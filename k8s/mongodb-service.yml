@@ -1,11 +1,12 @@
-apiVersion: v1
-kind: Service
+apiVersion: v1                # Service ka API version
+kind: Service                 # Resource type: Service
 metadata:
-  name: mongodb
-  namespace: chat-app
+  name: mongodb               # Service ka naam
+  namespace: chat-app         # Service jis namespace me create hogi
 spec:
   selector:
-    app: mongodb
+    app: mongodb              # Pod selector (mongodb pod ke label se match karega)
   ports:
-  - port: 27017
-    targetPort: 27017
+  - port: 27017               # Service ka port (cluster ke andar expose hoga)
+    targetPort: 27017         # Pod/Container ka actual port (MongoDB ka default port)
+  # type: ClusterIP           # Default type (sirf cluster ke andar access ke liye)
