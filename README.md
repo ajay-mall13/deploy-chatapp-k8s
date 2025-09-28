@@ -33,17 +33,6 @@ This project aims to provide a real-time chat experience that's both scalable an
 * **Online Status**: View real-time online/offline status of users 
 
 
-## 🛠️ Tech Stack:
-
-
-* **Backend:** Node.js, Express, MongoDB, Socket.io
-* **Frontend:** React, TailwindCSS
-* **Containerization:** Docker
-* **Orchestration:** Kubernetes (planned)
-* **Web Server:** Nginx
-* **State Management:** Zustand
-* **Authentication:** JWT
-* **Styling Components:** DaisyUI
 
 
 ## 🔧 Prerequisites:
@@ -247,4 +236,5 @@ This project is evolving, and here are a few exciting things on the horizon:
 
 
 This project is licensed under the MIT License. See the LICENSE file for more details.
+
 
