@@ -55,7 +55,36 @@ This project aims to provide a real-time chat experience that's both scalable an
 
 
 ## 📝 Setup .env File:
+# Kubernetes Setup on Linux
 
+Follow these steps to install Docker, Kind, and kubectl on Linux.
+
+## 1. Install Docker
+```bash
+curl -fsSL https://get.docker.com -o get-docker.sh
+sudo sh get-docker.sh
+rm get-docker.sh
+```
+
+## 2. Install Kind
+```bash
+curl -Lo ./kind https://kind.sigs.k8s.io/dl/v0.27.0/kind-linux-amd64
+chmod +x ./kind
+sudo mv ./kind /usr/local/bin/kind
+```
+
+## 3. Install kubectl
+```bash
+curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
+chmod +x kubectl
+sudo mv ./kubectl /usr/local/bin/kubectl
+```
+
+### Clone the Repository
+
+```bash
+git clone https://github.com/ajay-mall13/deploy-chatapp-k8s.git
+```
 
 1. Navigate to the `backend` directory:
 ```bash
@@ -69,11 +98,7 @@ PORT=5001
 ```
 > **Note:** Replace `your_jwt_secret_key` with a strong secret key of your choice.
 
-### Clone the Repository
 
-```bash
-git clone https://github.com/ajay-mall13/deploy-chatapp-k8s.git
-```
 
 ## 🏗️ Build and Run the Application"
 
@@ -222,3 +247,4 @@ This project is evolving, and here are a few exciting things on the horizon:
 
 
 This project is licensed under the MIT License. See the LICENSE file for more details.
+
