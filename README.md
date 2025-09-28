@@ -43,7 +43,6 @@ This project aims to provide a real-time chat experience that's both scalable an
 * **[Git](https://git-scm.com/downloads)** (to clone the repository)
 
 
-## 📝 Setup .env File:
 # Kubernetes Setup on Linux
 
 Follow these steps to install Docker, Kind, and kubectl on Linux.
@@ -74,7 +73,7 @@ sudo mv ./kubectl /usr/local/bin/kubectl
 ```bash
 git clone https://github.com/ajay-mall13/deploy-chatapp-k8s.git
 ```
-
+## 📝 Setup .env File:
 1. Navigate to the `backend` directory:
 ```bash
 cd backend
@@ -236,5 +235,6 @@ This project is evolving, and here are a few exciting things on the horizon:
 
 
 This project is licensed under the MIT License. See the LICENSE file for more details.
+
 
 
